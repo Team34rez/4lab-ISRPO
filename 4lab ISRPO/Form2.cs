@@ -31,5 +31,16 @@ namespace _4lab_ISRPO
             _mainForm.Show();
             base.OnFormClosed(e);
         }
+
+        private void btnHello_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text.Trim();
+            if (name == "")
+            {
+                MessageBox.Show("Введите имя");
+                return;
+            }
+            MessageBox.Show($"Привет, {name}!");
+        }
     }
 }

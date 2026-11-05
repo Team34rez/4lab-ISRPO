@@ -71,6 +71,7 @@
             btnHello.TabIndex = 3;
             btnHello.Text = "Hi!";
             btnHello.UseVisualStyleBackColor = true;
+            btnHello.Click += btnHello_Click;
             // 
             // Form2
             // 
