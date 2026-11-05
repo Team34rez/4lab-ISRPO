@@ -51,6 +51,7 @@
             btnOpen.TabIndex = 1;
             btnOpen.Text = "Open second form";
             btnOpen.UseVisualStyleBackColor = true;
+            btnOpen.Click += btnOpen_Click;
             // 
             // Form1
             // 

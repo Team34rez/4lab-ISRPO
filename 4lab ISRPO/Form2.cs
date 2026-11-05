@@ -12,9 +12,24 @@ namespace _4lab_ISRPO
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private readonly Form1 _mainForm;
+
+        public Form2(Form1 mainForm)
         {
             InitializeComponent();
+            _mainForm = mainForm;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // при закрытии второй формы (кнопкой «Назад» или крестиком) снова показываем главную
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            _mainForm.Show();
+            base.OnFormClosed(e);
         }
     }
 }
