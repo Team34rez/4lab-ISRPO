@@ -18,5 +18,10 @@ namespace _4lab_ISRPO
             form2.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

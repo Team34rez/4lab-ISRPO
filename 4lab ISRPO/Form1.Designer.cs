@@ -38,9 +38,10 @@
             label1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.Location = new Point(230, 38);
             label1.Name = "label1";
-            label1.Size = new Size(312, 81);
+            label1.Size = new Size(344, 81);
             label1.TabIndex = 0;
-            label1.Text = "Main form";
+            label1.Text = "Main form1";
+            label1.Click += label1_Click;
             // 
             // btnOpen
             // 
