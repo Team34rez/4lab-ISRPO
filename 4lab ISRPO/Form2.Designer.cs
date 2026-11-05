@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             btnBack = new Button();
+            txtName = new TextBox();
+            btnHello = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,11 +55,30 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
+            // txtName
+            // 
+            txtName.Location = new Point(101, 246);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(150, 27);
+            txtName.TabIndex = 2;
+            // 
+            // btnHello
+            // 
+            btnHello.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnHello.Location = new Point(120, 279);
+            btnHello.Name = "btnHello";
+            btnHello.Size = new Size(111, 70);
+            btnHello.TabIndex = 3;
+            btnHello.Text = "Hi!";
+            btnHello.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnHello);
+            Controls.Add(txtName);
             Controls.Add(btnBack);
             Controls.Add(label1);
             Name = "Form2";
@@ -70,5 +91,7 @@
 
         private Label label1;
         private Button btnBack;
+        private TextBox txtName;
+        private Button btnHello;
     }
 }
